@@ -1,0 +1,244 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	font-size: 62.5%;
+	font-family: "Roboto Slab", sans-serif;
+	font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+a{
+	transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+}
+header{
+	position: relative;
+}
+.navbg .slide,.navbg li{
+	height: 100%;
+	list-style: none;
+	background-attachment: fixed;
+}
+.slide-1{
+	background: url("../images/slide_1.jpg") no-repeat;
+}
+.slide-2{
+	background: url("../images/slide_2.jpg") no-repeat;
+}
+.slide-3{
+	background: url("../images/slide_3.jpg") no-repeat;
+}
+.cloth{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	opacity: 0.3;
+	background: #444853;
+}
+header .header-title{
+	position: absolute;
+	top: 50%;
+	margin-top: -129px;
+	width: 100%;
+	z-index: 2;
+	text-align: center;
+}
+header .header-title h1{
+	display: inline-block;
+	border: 7px solid #FFF;
+	padding: 20px 40px;
+	color: #FFF;
+	font-size: 3rem;
+	font-weight: 400;
+	
+}
+.navbar{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 3;
+}
+.navbar-default .container .navbar-header .navbar-brand{
+	font-size: 3rem;
+}
+
+.navbar-default .container .navbar-nav li a{
+	background: #FFF;
+	padding: 20px;
+	text-align: center;
+	font-size: 1.8rem;
+}
+.navbar-default .container .navbar-nav li a:hover{
+	color: #f9ad81;
+}
+.navbar-default .container .navbar-nav .active a{
+	color: #f9ad81;
+	background: #FFF;
+}
+.container .container-title{
+	margin: 50px auto;
+}
+.container .container-title h2{
+	color: #41454f;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	letter-spacing: 2px;
+}
+.container .container-title p{
+	padding: 20px 0;
+	color: #7a7e89;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+.portfolio{
+	padding: 40px 0;
+}
+.portfolio .container .portfolio-content .col-md-4 img{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 30px;
+}
+.about{
+	padding: 40px 0;
+	background: #444853;
+}
+.about .container .container-title h2{
+	color: #7a7e89;
+}
+.about .container .about-content .col-md-6{
+	position: relative;
+	color: #7a7e89;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
+.about .container .about-content .col-md-6 h2{
+	color: #FFF;
+}
+.about .container .about-content .col-md-6>span{
+	font-size: 1rem;
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+.about .container .about-content .col-md-6>p{
+	margin: 20px 0;
+}
+.content .container .container-title span{
+	margin: 30px auto;
+	width: 90%;
+	display: block;
+	font-size: 1.8rem;
+	color: #7a7e89;
+}
+.content .container .container-title .btn-primary{
+	background: #f9ad81;
+	border: #f9ad81;
+	padding: 15px 30px;
+	font-weight: bolder;
+}
+.focus{
+	position: relative;
+	overflow: hidden;
+	background: url("../images/slide_3.jpg") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.cloth-2{
+	height: 400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	opacity: 0.3;
+	background: #444853;
+}
+.carousel{
+	height: 400px;
+	z-index: 3;
+}
+.carousel .item{
+	height: 400px;
+	color: #FFF;
+	letter-spacing: 2px;
+}
+.carousel .item .carousel-caption h2{
+	text-align: left;
+	letter-spacing: 2px;
+	font-size: 2rem;
+}
+.carousel .item .carousel-caption p{
+	padding-top: 20px;
+	font-size: 20px;
+}
+@media screen and (min-width: 970px){
+	.navbar{
+		position: absolute;
+		top: 20px;
+	}
+	.navbar-default{
+		background: transparent;
+		border: transparent;
+	}
+	.navbar-default .container .navbar-header .navbar-brand{
+		color: #FFF;
+	}
+	.navbar-default .container .navbar-nav li a{
+		background: transparent;
+		color: #FFF;
+		padding: 0;
+		margin: 20px;
+	}
+	.navbar-default .container .navbar-nav .active a{
+		color: #FFF;
+		background: transparent;
+		border-bottom: 3px solid #f9ad81;
+	}
+	.container .container-title{
+		width: 70%;
+	}
+	.container .container-title p{
+		font-size: 2.8rem;
+	}
+	.portfolio{
+		padding: 100px 0;
+	}
+	.about{
+		padding: 100px 0;
+	}
+	.about .container .about-content .col-md-6:first-child{
+		padding-right: 70px;
+	}
+	.about .container .about-content .col-md-6:last-child{
+		padding-left: 70px;
+	}
+	.content{
+		padding: 100px 0;
+	}
+	.carousel{
+		height: 500px;
+	}
+	.carousel .item{
+		height: 400px;
+	}
+	.carousel .item .carousel-caption h2{
+		font-size: 3rem;
+	}
+	.cloth-2{
+		height: 500px;
+	}
+
+}
+@media screen and (max-width: 414px){
+	.col-xxs-12{
+		width: 100%;
+	}
+}
